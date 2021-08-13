@@ -5,8 +5,6 @@
     {% endfor %}
 </ul -->
 
-margin-top: 200px
-
 <form action="{% url 'polls:vote' question.id %}" method="post">
     {% csrf_token %}
     <fieldset>
